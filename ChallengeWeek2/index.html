@@ -39,18 +39,43 @@
           </div>
         </div>
 
-        <div><button class="dropbtn2">Buy</button></div>
+        <div>
+          <a class="buy" href="" target="_blank"
+            ><button class="dropbtn2">Buy</button></a
+          >
+        </div>
       </div>
       <div class="end">
-        <figure id="mobile">
+        <!-- <figure id="mobile">
           <img src="/ChallengeWeek2/images/home_black_24dp.svg" alt="" />
-        </figure>
-        <figure style="margin-right: 20px">
+        </figure> -->
+        <!-- <figure style="margin-right: 20px">
           <img src="/ChallengeWeek2/images/search.svg" alt="" />
+        </figure> -->
+        <div class="search">
+          <input class="text" type="text" />
+        </div>
+        <div>
+          <figure>
+            <img
+              width="24px"
+              src="/ChallengeWeek2/images/team1.png"
+              alt="Face"
+            />
+          </figure>
+        </div>
+        <div>
+          <figure id="mobile">
+            <div class="dropdown">
+              <button class="dropbtn"><img src="/ChallengeWeek2/images/menu_black_24dp.svg" alt="" /></button>
+              <div class="dropcontent">
+                <a href="">A link</a><br />
+                <a href="">Another Link</a><br />
+                <a href="">So Many Links</a>
+              </div>
+          
         </figure>
-        <figure>
-          <img width="24px" src="/ChallengeWeek2/images/team1.png" alt="Face" />
-        </figure>
+        </div>
       </div>
     </header>
 
@@ -78,19 +103,19 @@
           Tricia Albert
         </article>
         <article>
-          <figure>
+          <figure class="interact">
             <img src="/ChallengeWeek2/images/calendar.svg" alt="" />
           </figure>
           Yesterday
         </article>
         <article>
-          <figure>
+          <figure class="interact">
             <img src="/ChallengeWeek2/images/reply.svg" alt="" />
           </figure>
           25
         </article>
         <article>
-          <figure>
+          <figure class="interact">
             <img src="/ChallengeWeek2/images/star-five.svg" alt="" />
           </figure>
         </article>
@@ -134,70 +159,59 @@
 
           <h5>For the crust</h5>
           <div>
-            <span class="nocheck"
-              ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-            /></span>
             <input type="checkbox" class="invisible" id="first" />
-            <label for="first"> 400g graham crackers</label><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke1" for="first"></label><br />
+          </div>
+          <div>
             <input type="checkbox" id="second" />
-            <label for="second"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              150g unsalted butter, melted</label
-            >
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke2" for="second"> </label>
           </div>
           <h5>For the cheesecake</h5>
           <div>
             <input type="checkbox" id="third" checked="checked" />
-            <label for="third"
-              ><span class="check"
-                ><img src="/ChallengeWeek2/images/checked.svg" alt=""
-              /></span>
-              300g marshmallows</label
-            ><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke3" for="third"> </label><br />
+          </div>
+          <div>
             <input type="checkbox" id="fourth" />
-            <label for="fourth"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              175g unsalted butter, melted</label
-            ><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke4" for="fourth"> </label><br />
+          </div>
+          <div>
             <input type="checkbox" id="fifth" />
-            <label for="fifth"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              500g philadelphia cream cheese, softened</label
-            ><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke5" for="fifth"> </label><br />
+          </div>
+          <div>
             <input type="checkbox" id="sixth" />
-            <label for="sixth"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              250g thickened/whipping cream, warm</label
-            ><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke6" for="sixth"> </label><br />
+          </div>
+          <div>
             <input type="checkbox" id="seventh" />
-            <label for="seventh"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              3 tbsp powdered gelatin + 3 tbsp water</label
-            ><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke7" for="seventh"> </label><br />
+          </div>
+          <div>
             <input type="checkbox" id="eigth" />
-            <label for="eigth"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              5 drops purple food gel</label
-            ><br />
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke8" for="eigth"> </label><br />
+          </div>
+          <div>
             <input type="checkbox" id="ninth" />
-            <label for="ninth"
-              ><span class="nocheck"
-                ><img src="/ChallengeWeek2/images/circle_black_24dp.svg" alt=""
-              /></span>
-              3 drops blue food gel</label
-            >
+            <div class="check"></div>
+            <div class="nocheck"></div>
+            <label class="stroke9" for="ninth"> </label>
           </div>
         </article>
         <article class="nutrition">
@@ -311,7 +325,7 @@
     </main>
     <footer>
       <h1>Already made this?</h1>
-      <button>Share your feedback</button>
+      <a href="" target="_blank"><button>Share your feedback</button></a>
       <hr />
     </footer>
   </body>
