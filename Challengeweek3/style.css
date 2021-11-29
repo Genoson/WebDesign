@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.staticHead {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: linear-gradient(0.25turn, #385e9d, #00b389, #e1523e);
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftHead,
+.rightHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 16px;
+}
+
+.staticLeftNav {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 200px;
+  height: calc(100vh - 64px);
+  background: linear-gradient(0.375turn, #385e9d, #00b389, #e1523e);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+}
+/* style for #version1, a large light blue button with a hover transform effect and a click transform effect */
+#version1,
+#version2,
+#version3,
+#version4,
+#version5,
+#version6,
+#version7,
+#version8,
+#version9,
+#version10 {
+  width: 100%;
+  height: 100%;
+  background-color: #00bcd4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#version1:hover,
+#version2:hover,
+#version3:hover,
+#version4:hover,
+#version5:hover,
+#version6:hover,
+#version7:hover,
+#version8:hover,
+#version9:hover,
+#version10:hover,
+#submitButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+#version1:active,
+#version2:active,
+#version3:active,
+#version4:active,
+#version5:active,
+#version6:active,
+#version7:active,
+#version8:active,
+#version9:active,
+#version10:active,
+#submitButton:active {
+  transform: scale(0.9);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.contentArea {
+  position: fixed;
+  top: 64px;
+  left: 200px;
+  width: calc(100vw - 200px);
+  height: calc(100vh - 64px);
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  /* background: linear-gradient(0.36turn, #1d8993, #00b389, #e1523e, #e1523e, #e1523e); */
+}
+
+form {
+  /* height:100%; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 2px solid black;
+  border-radius: 16px;
+  background-color: rgba(100, 100, 100, 0.85);
+}
+
+
+form label, form input {
+  margin: 16px;
+  /* line-height: 16px; */
+}
+
+form input {
+  height: 1.4rem;
+  border-radius: 8px;
+  padding-left: 8px;
+}
+
+form label {
+  text-align: end;
+}
+
+#contentForm p{
+  text-indent: 24px;
+  margin: 16px;
+}
+
+#submitButton{
+  background-color: #00bcd4;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+#contentResult {
+  height:48px;
+  /* text-decoration: underline; */
+
+}
