@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gary's Blue Diner - Order Online</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <section id="header">
+      <div id="dropdown">
+        <img src="./media/hamburger.svg" alt="" />
+        <div id="dropdownContent">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="order.html">Order Online</a>
+          <a href="reservations.html">Reservations/Catering</a>
+          <a href="join.html">Join Our Family</a>
+        </div>
+        <div>
+          <h1 id="stickyTitle">Gary's Blue Diner</h1>
+        </div>
+        <div id="callMe">
+          <img src="./media/phone.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div id="colorCorrect"></div>
+    <header>
+      <div id="logo">
+        <h1><img src="./media/GaryLogo.svg" alt="Gary's Blue Diner Logo" /></h1>
+      </div>
+    </header>
+    <main id="menuMain">
+      <section id="orderHead">
+        <h2 class="sectionSpan">Online Ordering</h2>
+        <p>
+          Welcome to the Gary’s Blue Diner online ordering tool. Take a moment
+          to fill in your details below to ensure the best service we can offer.
+          For larger orders please see our
+          <a href="reservations.html">Reservations and Catering</a> page.
+        </p>
+      </section>
+      <section id="customerDetails">
+        <h3 class="sectionSpan">Customer Details</h3>
+        <form id="custForm">
+          <label class="formLeft" for="custName">Name</label>
+          <input
+            class="formRight"
+            type="text"
+            name="custName"
+            id="custName"
+            placeholder="Your Name Here"
+          />
+          <label class="formLeft" for="email">Email</label>
+          <input
+            class="formRight"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="youremail@email.com"
+          />
+          <label class="formLeft" for="phone">Phone</label>
+          <input
+            class="formRight"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="7095555555"
+          />
+          <label class="formLeft" for="address">Address</label>
+          <input
+            class="formRight"
+            type="text"
+            name="address"
+            id="address"
+            placeholder="50 Street Place"
+          />
+          <label class="formLeft" for="city">City</label>
+          <input
+            class="formRight"
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Town"
+          />
+          <input id="customerSubmit" type="submit" value="Submit" />
+        </form>
+      </section>
+      <div id="personalGreet"></div>
+      <section id="orderDetails">
+        <h3 class="sectionSpan">Order Details</h3>
+        <form id="orderForm">
+          <label for="" class="formLeft">Order Type:</label>
+          <label for="pickUp" class="formMidL">Pick Up</label>
+          <input type="radio" class="formMid" name="orderType" id="pickUp" />
+          <label for="delivery" class="formMidR">Delivery</label>
+          <input type="radio" class="formEnd" name="orderType" id="delivery" />
+          <label for="" class="formLeft">Cutlery:</label>
+          <label for="cutlery" class="formMidL">Yes</label>
+          <input type="checkbox" class="formMid" name="cutlery" id="cutlery" />
+          <label for="cutleryQuantity" class="formMidR">Quantity</label>
+          <select name="cutlery" id="cutleryQuantity" class="formEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item1" class="formSpanStart"
+            >Fish and Chips @ $18.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Fish And Chips" id="item1" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item2" class="formSpanStart"
+            >Squid Rings @ $15.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Squid Rings" id="item2" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item3" class="formSpanStart"
+            >Red Fish, White Fish @ $33.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Red Fish, White Fish" id="item3" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item4" class="formSpanStart"
+            >Thai Red Octopus Soup @ $13.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Thai Red Octopus Soup" id="item4" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item5" class="formSpanStart"
+            >Savoury Stuffed Squid @ $17.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Savoury Stuffed Squid" id="item5" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item6" class="formSpanStart"
+            >Scallops @ $21.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Scallops" id="item6" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item7" class="formSpanStart"
+            >Crusted Cod @ $25.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Crusted Cod" id="item7" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item8" class="formSpanStart"
+            >Roasted Root Medley @ $11.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Roasted Root Medley" id="item8" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item9" class="formSpanStart"
+            >Prawn Linguine @ $27.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Prawn Linguine" id="item9" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item10" class="formSpanStart"
+            >Me Whole Trout @ $24.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Me Whole Trout" id="item10" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item11" class="formSpanStart"
+            >Fish Stick Stacker @ $19.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Fish Stick Stacker" id="item11" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="item12" class="formSpanStart"
+            >Seafood Platter @ $39.99 each
+            <div id="orderItemDescribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              euismod, nisl eget consectetur consectetur, nisi nisl euismod
+              nisi, euismod euismod nisi nisl euismod nisi. Market Prices.
+            </div></label
+          >
+          <select name="Seafood Platter" id="item12" class="formSpanEnd">
+            <option selected value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <input id="orderSubmit" type="submit" value="Submit" />
+        </form>
+      </section>
+      <div id="orderConfirmation"></div>
+      <section id="contactUs">
+        <h2 class="sectionSpan"><a href="contactUs"></a> Contact Us</h2>
+        <div class="sectionSpan">
+          <p>
+            Phone:(709)555-5555 <br />
+            Email: gary.blue@bluediner.ca
+          </p>
+          <p>
+            For employment and franchise opportunities follow this link:
+            <br /><a href="">Join the Blue Family</a>
+          </p>
+        </div>
+        <div class="sectionSpan">
+          <p>Follow us on Social media</p>
+          <div class="social">
+            <img src="./media/Facebook.svg" alt="" />
+            <img src="./media/Instagram.svg" alt="" />
+            <img src="./media/Twitter.svg" alt="" />
+          </div>
+        </div>
+        <div class="sectionSpan">
+          <p>copyright information</p>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>
